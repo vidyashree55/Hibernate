@@ -1,0 +1,17 @@
+package hello;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.repository.query.Param;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public abstract class PersonRepository implements CrudRepository
+{
+	@Autowired 
+	 Repository PersonRepository; 
+	List<Person> findByLastName(@Param("name") String name);
+    
+}

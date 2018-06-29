@@ -1,0 +1,16 @@
+package org.employeejava;
+
+import java.util.ArrayList;
+
+import javax.persistence.Entity;
+
+public class DepartmentBean
+
+
+{
+	int id;
+	String name;
+	
+	
+	
+}

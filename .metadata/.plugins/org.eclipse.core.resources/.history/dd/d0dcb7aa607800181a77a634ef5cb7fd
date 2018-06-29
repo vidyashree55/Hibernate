@@ -1,0 +1,5 @@
+package com.home.hibernate.test;
+
+public @interface Autowired {
+
+}

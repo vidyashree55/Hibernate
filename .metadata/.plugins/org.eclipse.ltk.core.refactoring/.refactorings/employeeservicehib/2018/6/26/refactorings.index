@@ -1,0 +1,13 @@
+1530002444547	Delete elements
+1530002451135	Delete element
+1530002760234	Extract local variable 'buildSessionFactory'
+1530002771741	Convert local variable 'buildSessionFactory' to field
+1530003325495	Delete elements
+1530003566312	Delete element
+1530003598214	Rename type 'SamplleService'
+1530003916066	Extract local variable 'save'
+1530005335659	Extract local variable 'vidya'
+1530005353795	Extract local variable 'departmentBean'
+1530005593992	Extract local variable 'session'
+1530006473256	Extract local variable 'employeeDao'
+1530006840622	Extract local variable 'list'

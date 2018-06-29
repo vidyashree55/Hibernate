@@ -1,0 +1,4 @@
+spring.datasource.url=jdbc:mysql://localhost:3306/chrdb
+spring.datasource.username=root
+spring.datasource.password=vidya
+spring.datasource.driverClassName=com.mysql.jdbc.Driver

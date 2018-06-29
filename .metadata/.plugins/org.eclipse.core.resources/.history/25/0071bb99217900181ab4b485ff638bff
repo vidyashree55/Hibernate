@@ -1,0 +1,43 @@
+package org.employeejava;
+
+import java.io.Serializable;
+
+import org.hibernate.Session;
+
+public class SampleService {
+
+	public void process()
+	{
+		
+		  Session session = HibUtil.getSessionfactory().openSession();
+	      session.beginTransaction();
+	      
+	   
+		
+	      session.save(new EmployeeBean(1234, "Vidya", 1234));
+	      
+	      session.save(new DepartmentBean(1, "java"));
+	      session.getTransaction().commit();
+			
+		/*EmployeeBean vidya = emp.add(new EmployeeBean(1234, "Vidya", 1234));
+		EmployeeBean vidya1 = emp.add(new EmployeeBean(1235, "Vidya1", 1234));
+		System.out.println(emp.getData());
+		boolean deleted = emp.delete(vidya);
+		System.out.println("deleted="+deleted);
+		System.out.println(emp.getData());
+		CRUDDao<DepartmentBean> dept=new CRUDDao<DepartmentBean>(){
+
+			@Override
+			protected void actualUpdate(DepartmentBean source, DepartmentBean target) {
+				target.setName(source.getName());
+				
+			}};
+		DepartmentBean dep1 = dept.add(new DepartmentBean(1, "java"));
+		System.out.println(dept.getData());
+		DepartmentBean dep2 = dept.add(new DepartmentBean(2, "hr"));
+	     System.out.println(dept.getData());	
+	     dep1.addMember(vidya1.empid);
+	     
+	     System.out.println(dept.getData());*/
+	}
+}

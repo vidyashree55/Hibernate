@@ -1,0 +1,13 @@
+package hello;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public abstract class PersonRepository implements CrudRepository
+{
+	@Autowired 
+	 Repository PersonRepository; 
+
+}

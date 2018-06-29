@@ -1,0 +1,22 @@
+package hello;
+
+@SpringBootApplication
+@EnableMongoRepositories("in.topthree.util")
+public class Run implements CommandLineRunner {
+
+    public static void main(String[] args) {
+        SpringApplication.run(Run.class, args);
+        System.out.println("Run");
+    }
+
+    @Autowired
+    private Process pr;
+
+    @Override
+    public void run(String... args) throws Exception {
+        pr.saveDB(new Student("Testing", "FB"));
+        System.exit(0);
+    }
+
+}
+}

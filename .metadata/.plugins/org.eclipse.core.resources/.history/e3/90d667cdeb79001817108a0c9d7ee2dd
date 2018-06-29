@@ -1,0 +1,24 @@
+package hello;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+@Service
+public class SampleService
+{
+	@Autowired 
+	Service SampleService ;
+	private static List<Person> persons = new ArrayList<>();
+	static{
+		
+	
+	Person person1=new Person(1,"vidya","shree");
+	Person person2=new Person(1,"chethana","achar");
+	Person person3=new Person(1,"shekar","raj");
+	persons.add(person1);
+	persons.add(person2);
+}
+}
